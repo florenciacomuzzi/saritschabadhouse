@@ -1,0 +1,68 @@
+body {
+    direction: ltr; /* Default text direction */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.english, .hebrew {
+    width: 50%;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.english:hover, .hebrew:hover {
+    background-color: #e0e0e0;
+}
+
+.english {
+    text-align: left;
+    border-right: 2px solid #ddd;
+}
+
+.hebrew {
+    text-align: right;
+    direction: rtl;
+}
+
+.title-subsection {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc; /* Emphasizes the title subsection */
+}
+
+.subsection {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Subtle separator for each subsection */
+}
+
+.subsection:last-child {
+    border-bottom: none; /* No border for the last subsection */
+}
+
+h2, h3 {
+    color: #2a2a2a;
+    margin-top: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
