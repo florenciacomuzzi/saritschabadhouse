@@ -56,15 +56,26 @@ body {
 }
 
 .photo-section {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    justify-content: space-between; /* Space between the images */
+    align-items: center; /* Center align items */
     text-align: center; /* Centering the photos */
-    padding-top: 20px; /* Padding above the photo section */
+    padding: 20px; /* Adds some padding around the images */
+    width: 70%; /* Full width of the container */
+    /*width: 500px;  !* Set the width of the images *!*/
+    /*height: 500px; !* Set the height of the images *!*/
+    /*object-fit: cover; !* Ensures the image covers the area without distorting aspect ratio *!*/
+    /*padding-top: 20px; !* Padding above the photo section *!*/
+    margin-bottom: 20px; /* Adds space between the images */
 }
 
 .photo-section img {
-    width: 80%; /* Responsive image size */
-    height: auto;
+    max-width: 49%; /* Ensures images are responsive and do not overflow their container */
     border-radius: 4px; /* Material design rounded corners for images */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adds space between the images */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the dimensions set without cropping */
 }
 
 h2, h3 {

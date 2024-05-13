@@ -1,0 +1,32 @@
+{
+  "name": "saritschabadhouse",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florenciacomuzzi/saritschabadhouse.git"
+  },
+  "keywords": [
+    "info-site"
+  ],
+  "author": "Florencia Comuzzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florenciacomuzzi/saritschabadhouse/issues"
+  },
+  "homepage": "https://github.com/florenciacomuzzi/saritschabadhouse#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "sass": "^1.77.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
