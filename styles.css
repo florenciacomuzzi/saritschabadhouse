@@ -1,6 +1,6 @@
 body {
     direction: ltr; /* Default text direction */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', serif; /* General font for better compatibility */
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -10,52 +10,61 @@ body {
     width: 90%;
     margin: 20px auto;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.section {
+.text-sections {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
+    flex-direction: row;
+
+    /*justify-content: space-between;*/
+    /*margin-bottom: 20px;*/
 }
 
 .english, .hebrew {
-    width: 50%;
-    padding: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.english:hover, .hebrew:hover {
-    background-color: #e0e0e0;
-}
-
-.english {
-    text-align: left;
-    border-right: 2px solid #ddd;
+    /*width: 50%;*/
+    /*padding: 20px;*/
+    flex: 1; /* Ensures both columns take up equal space */
+    display: flex;
+    flex-direction: column; /* Align subsections in a column */
 }
 
 .hebrew {
+    direction: rtl; /* Right-to-left direction for Hebrew text */
     text-align: right;
-    direction: rtl;
+    font-family: 'Noto Sans Hebrew', sans-serif; /* Noto Sans Hebrew specifically for Hebrew */
 }
 
-.title-subsection {
+.title-subsection h2 {
+    border-bottom: 4px solid #6200ea; /* Indigo accent from Material Design */
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ccc; /* Emphasizes the title subsection */
 }
 
 .subsection {
+    flex: 1; /* Allows subsections to expand to fit the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly inside the subsection */
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee; /* Subtle separator for each subsection */
+    border-bottom: 1px solid #eee;
+    position: relative; /* Required for MDL effects */
 }
 
-.subsection:last-child {
-    border-bottom: none; /* No border for the last subsection */
+.english .subsection, .hebrew .subsection {
+    flex: 1; /* This will make each subsection flex to fill the space as needed */
+}
+
+.photo-section {
+    text-align: center; /* Centering the photos */
+    padding-top: 20px; /* Padding above the photo section */
+}
+
+.photo-section img {
+    width: 80%; /* Responsive image size */
+    height: auto;
+    border-radius: 4px; /* Material design rounded corners for images */
+    margin-bottom: 10px;
 }
 
 h2, h3 {
