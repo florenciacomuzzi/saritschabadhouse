@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development DEBUG_MODE=1 node app.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,13 @@
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
     "cookie-parser": "^1.4.6",
+    "enum": "^3.0.4",
     "express": "^4.19.2",
     "morgan": "^1.10.0",
+    "node-sass-middleware": "^1.1.0",
     "pug": "^3.0.2",
     "sass": "^1.77.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.13.0"
   }
 }

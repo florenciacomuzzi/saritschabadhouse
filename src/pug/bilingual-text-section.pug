@@ -1,0 +1,10 @@
+block bilingual-text-container
+    .row(class="row g-3 align-items-stretch")
+        .col(class="col-md-6")
+            .col.content(class="p-3 border bg-light")
+                block english-content.title
+                block english-content.contents
+        .hebrew.col(class="col-md-6")
+            .col.content(class="p-3 border bg-light")
+                block hebrew-content.title
+                block hebrew-content.contents
